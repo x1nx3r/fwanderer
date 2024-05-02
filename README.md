@@ -2,7 +2,7 @@
 
 1.  git clone this into C:/xampp/htdocs/ (or wherever your xampp/htdocs/ are located)
 2.  create a user and a database on your mysql xampp from phpmyadmin (or any database tool to interact with mysql)
-you could create a user account on the "user account" section on you phpmyadmin panel
+you could create a user account on the "user account" section on your phpmyadmin panel
 ![admin panel](mysql.png)
 3.  create a "credentials.env" file that contains the user and database details to your mysql db the credentials.env looks like this :
    
