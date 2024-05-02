@@ -1,4 +1,4 @@
-to host this on your xampp server what you need to do are :
+<h1>To host this on your xampp server what you need to do are :</h1>
 
 1.  git clone this into C:/xampp/htdocs/ (or wherever your xampp/htdocs/ are located)
 2.  create a user and a database on your mysql xampp from phpmyadmin (or any database tool to interact with mysql)
