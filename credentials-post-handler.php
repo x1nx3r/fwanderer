@@ -2,34 +2,10 @@
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Headers: Content-Type");
 
-function loadEnvironmentVariables($filePath) {
-    if (!is_file($filePath)) {
-        throw new Exception('Environment file not found.');
-    }
-
-    $lines = file($filePath, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
-    foreach ($lines as $line) {
-        if (strpos(trim($line), '#') === 0) {
-            continue;
-        }
-
-        list($name, $value) = explode('=', $line, 2);
-        $name = trim($name);
-        $value = trim($value);
-
-        if (!array_key_exists($name, $_SERVER)) {
-            $_SERVER[$name] = $value;
-        }
-    }
-}
-
-loadEnvironmentVariables(__DIR__ . '/credentials.env');
-
-$servername = $_SERVER['DB_HOST'];
-$username = $_SERVER['DB_USER'];
-$password = $_SERVER['DB_PASSWORD'];
-$dbname = $_SERVER['DB_NAME'];
-
+$servername = "127.0.0.1";
+$username = "udin";
+$password = "5kxlrsejJMeOVuR*";
+$dbname = "players";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
